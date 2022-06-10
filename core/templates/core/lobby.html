@@ -1,0 +1,24 @@
+{% extends 'core/base.html'%}
+{% block content  %}
+{% load static %}
+
+<main id="main">
+    <div >
+        <img id ="icon" src="{% static 'images/icon.png' %}" alt="icon">
+    </div>
+    <br>
+    <h1>Welcome to Agora Video Call App!!</h1>
+    <div class="input_fields">
+        <div class="field_text">USERNAME</div>
+        <div class="input-group input-group-lg field" id="username">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <div class="field_text">ROOM NAME</div>
+        <div class="input-group input-group-lg field" id="RoomName">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+    </div>
+</main>
+
+
+{% endblock content %}
